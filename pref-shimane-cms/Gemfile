@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rake', '< 11.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -49,8 +51,8 @@ gem 'bartt-ssl_requirement', '1.4.2'
 gem 'mail-iso-2022-jp', '2.0.2'
 gem 'iconv', '1.0.4'
 gem 'jpmobile', '4.0.0'
-gem 'activerecord-session_store', '0.1.0', github: 'rails/activerecord-session_store'
-gem 'rmagick', '2.13.2'
+gem 'activerecord-session_store', '0.1.0'
+gem 'rmagick', '~> 2.13.2'
 gem 'activerecord-import', '0.5.0'
 gem 'paperclip', '3.5.2'
 
@@ -59,7 +61,7 @@ gem 'jquery-ui-rails', '4.1.1'
 gem 'less-rails', '2.4.2'
 gem 'twitter-bootstrap-rails', '2.2.8'
 gem 'ckeditor', '4.0.8'
-gem 'prototype-rails', '4.0.0', git: 'git://github.com/rails/prototype-rails'
+gem 'prototype-rails', '~> 4.0.0', git: 'git://github.com/rails/prototype-rails'
 gem 'prototype_legacy_helper', '0.0.0', git: 'git://github.com/rails/prototype_legacy_helper.git'
 
 # for development
