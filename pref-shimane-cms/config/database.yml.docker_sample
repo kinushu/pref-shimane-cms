@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  host: db
+  database: cms_development
+  username: cms
+  password: cms
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  host: db
+  database: cms_test
+  username: cms
+  password: cms
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  host: db
+  database: cms_production
+  username: cms
+  password: cms
+  pool: 5
+  timeout: 5000

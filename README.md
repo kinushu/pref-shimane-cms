@@ -22,3 +22,27 @@
 ## 旧島根県CMS
 
   http://projects.netlab.jp/PrefShimaneCMS/
+
+## Dockerでの確認方法
+
+初期データを流し込み、動作を確認する環境を構築します。
+
+```bash
+docker-compose build
+docker-compose up -d
+docker-compose exec web /myapp/appinit.sh
+docker-compose stop
+```
+起動中に以下のURLを確認する。
+
+### 公開画面
+http://localhost:3000/
+
+### 管理画面のログイン
+http://localhost:3000/susanoo/users/login
+
+### DBを初期化する際
+
+```bash
+docker-compose rm db postgres-data
+```
